@@ -1,0 +1,29 @@
+{
+  "architecture_version": "0.4-dev",
+  "workspace": "workspace",
+  "database": "workspace/.ali/events.sqlite3",
+
+  "components": {
+    "ego": {
+      "class": "examples.llm_ego.LLMEgo",
+      "params": {
+        "model": "claude-sonnet-4-6",
+        "stub": true
+      }
+    }
+  },
+
+  "runtime": {
+    "max_proposals_per_run": 20,
+    "minimum_viability_for_execution": 0.60
+  },
+  "causal_core": {
+    "minimum_free_disk_mb": 50,
+    "maximum_unresolved_ratio": 0.50
+  },
+  "super_ego": {
+    "minimum_confidence": 0.65,
+    "prefer_reversible_weight": 1.0,
+    "prefer_low_uncertainty_weight": 1.0
+  }
+}

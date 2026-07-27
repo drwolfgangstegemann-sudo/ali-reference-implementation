@@ -1,0 +1,18 @@
+{
+  "architecture_version": "0.4",
+  "workspace": "workspace",
+  "database": "workspace/.ali/events.sqlite3",
+  "runtime": {
+    "max_proposals_per_run": 20,
+    "minimum_viability_for_execution": 0.6
+  },
+  "causal_core": {
+    "minimum_free_disk_mb": 50,
+    "maximum_unresolved_ratio": 0.5
+  },
+  "super_ego": {
+    "minimum_confidence": 0.85,
+    "prefer_reversible_weight": 1.0,
+    "prefer_low_uncertainty_weight": 1.0
+  }
+}
