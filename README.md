@@ -1,4 +1,4 @@
-# ALI Reference Implementation v0.4
+# ALI Reference Implementation v0.2
 
 This repository is a complete, executable minimal implementation of the architecture described in *Artificial Local Intelligence (ALI): Architecture and Reference Implementation*.
 
